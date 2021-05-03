@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic Page Setup -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe</title>
+
+  <!-- CSS Styling Connection -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+  <link href="/CSS-Styles/index.css" rel="stylesheet" />
+</head>
+
+<!-- Game Container -->
+
+<body>
+
+  <!-- Game Title -->
+  <h1 class="centerItem">Tic Tac Toe</h1>
+
+  <!--The Full 3x3 Grid-->
+  <div class="grid">
+
+    <!--Rows of Cells-->
+    <div id="row-1">
+      <div id="cell-0" class="cell" cell="0">0</div>
+      <div id="cell-1" class="cell" cell="1">1</div>
+      <div id="cell-2" class="cell" cell="2">2</div>
+    </div>
+    <div id="row-2">
+      <div id="cell-3" class="cell" cell="3">3</div>
+      <div id="cell-4" class="cell" cell="4">4</div>
+      <div id="cell-5" class="cell" cell="5">5</div>
+    </div>
+    <div id="row-3">
+      <div id="cell-6" class="cell" cell="6">6</div>
+      <div id="cell-7" class="cell" cell="7">7</div>
+      <div id="cell-8" class="cell" cell="8">8</div>
+    </div>
+  </div>
+
+  <!-- Game Timer -->
+  <div>
+    <h5 id="clock" class="centerItem">Time Elapsed : 00:00:00</h5>
+  </div>
+
+  <!-- Game Status Update Text -->
+  <div class="status">
+    <h5 id="status-text" class="centerItem">Select Game Type To Begin.</h5>
+    <button id="start" type="button">Player Vs. Player</button>
+    <button id="computer" type="button">Player Vs. Computer</button>
+  </div>
+
+  <!-- Player Name Input Form -->
+  <div class="centerItem">
+    <form id="player-form">
+      <div id="player-one-wrap">
+        <label>X's: <input id="player-one" type="text" placeholder="name" /></label>
+      </div>
+      <div id="player-two-wrap">
+        <label>O's: <input id="player-two" type="text" placeholder="name" /></label>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+  </div>
+
+  <!-- JavaScript Behavior Connection -->
+  <script src="/JavaScript/index.js"></script>
+</body>
+
+</html>
